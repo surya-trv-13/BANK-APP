@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.corousel{
+width=100%;
+height: 455px;
+background-image: url(i/bank-1.jpg);
+background-size: cover;
+border: 3px solid green;
+animation-name: pic;
+animation-duration: 42s;
+animation-iteration-count: infinite;
+}
+@keyframes pic{
+	0%{background-image: url(i/bank-1.jpg);}
+	14%{background-image: url(i/BANK-2.jpg);}
+	28%{background-image: url(i/CREDIT-CARD.jpg);}
+	42%{background-image: url(i/PERSONAL.jpg);}
+	56%{background-image:url(i/bank-3.jpg);}
+	70%{background-image: url(i/eduloan.jpg);}
+	84%{background-image: url(i/homeloan.jpg);}
+	100%{background-image: url(i/bank-1.jpg);}
+	}
+	#t2{
+	color:grey;text-decoration: none;font-family: Magneto;	
+	}
+	#t2:hover{
+		color: green;
+	}
+	.staff{
+		width: 30%;
+		height:300px;
+		
+		margin-left: 30px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.image{
+		display: block;
+		width:100%;
+		height: 100%;
+	}
+	.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+	#team{
+		width: 100%;
+	}
+	.staff:hover .overlay {
+  bottom: 0px;
+  height: 100%;
+}
+	.text {
+  color: white;
+  font-size: 20px;
+	font-family: Arial Rounded MT;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+	.last{
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 20px;
+	}
+	.topbar {
+  overflow: hidden;
+  background-color: gainsboro;
+	}
+	.topbar a {
+  float: left;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:Arial Rounded MT;
+}
+	.topbar a:hover {
+  background-color: gray;
+  color: black;
+  transition: 0.5s;
+}
+
+.topbar a.active {
+  background-color: indianred;
+  color: white;
+}
+    #abc{
+        text-decoration: none;
+        font-family: Cooper;
+        font-style: oblique;
+        color: red;
+    }
+    #abc:hover{
+        color:green;
+    }
+#sidevdo video
+	{
+		position:absolute;
+		cursor: pointer;
+		left:-410px;
+		transition: 0.3s;
+		padding: 15px;
+		width:420px;
+		font-size: 30px;
+		border-radius: 0 5px 5px 0;
+		text-align: right;
+		top:800px;
+		background-color: blueviolet;
+		color: white;
+	}
+	#sidevdo video:hover{
+		left: 0;
+	}
+#side a {
+    position:fixed;
+    right: -150px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+}
+
+#side a:hover
+	{
+    right: 0;
+}
+#fb
+    {
+        top:220px;
+        background-color: steelblue;
+        color: white;
+    }
+    #tw
+    {
+        top:300px;
+        background-color: white;
+        color: skyblue;
+    }
+    #li
+    {
+        top:380px;
+        background-color: dodgerblue;
+        color: white;
+    }
+    #yt
+    {
+        top:460px;
+        background-color: white;
+        color: red;
+    }
+.row
+    {   
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width:50%;
+        text-align: center;
+        margin-left: 25%;
+    }
+    .row:hover
+    {
+        transition: 0.3s;
+        box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    h1,h2{display: inline;}
+.formheading1{  
+    background-color:BLUE;  
+    color:pink;  
+    padding:0px;  
+    text-align:center;
+    font-family: Cooper Black;
+}  
+.formheading2{  
+    background-color:BLUE;  
+    color:white;  
+    padding:0px;  
+    text-align:center;
+    font-family:Monotype Corsiva;  
+}  
+.banner
+{
+margin:0px;
+padding:0;
+height:35%;
+
+overflow:hidden;
+border:solid;
+background-color:Blue;
+border-pixel:0px 0px 5px 0px;
+}
+	#p1{
+		text-align: right;
+		margin-bottom: 0px;
+		margin-right:20px;
+		color: white;
+		font-family: Arial Rounded MT;
+		font-size: 15px;
+	}
+
+</style>
+</head>
+
+<title>HOME</title>
+
+<body bgcolor="ghostwhite">
+<center>
+<div class="banner" id="home">
+<img src="i/banklogo.jpg" align="left">
+<br><h1 class="formheading1">TRV-13 BANK PVT. LTD.</h1>
+<h5 class="formheading2">we promise your happiness...</h5>
+<p id="p1">Contact Us:1800-290-3399(TOLL_FREE)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-8895591782(MOBILE)</p>
+</div>
+
+<div class="topbar">
+  <a class="active" href="#home">HOME</a>
+  <a href="#service">OUR SERVICES</a>
+  <a href="#team">OUR TEAM</a>
+  <a href="#pmy">PRADHAN MANTRI YOJNA</a>
+  <a href="#about">ABOUT</a>
+  <a href="Login.jsp" style="color: red;background-color: white;float: right;">LOGIN</a>
+</div>
+<br>
+<div class="corousel">
+	
+	</div>	
+
+    
+<br><br><br><br><br>
+<div id="service">
+            <div>
+                <div>
+                    <div>
+                        <h1 style="text-align: center ;font-family:Wide Latin; color:orange;">
+                            ONLINE BANKING SERVICES</h1><br>
+                            <h2 style="text-align: center;">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h2><h1 style="text-align: center;color:red;">&nabla;</h1><h2 style="text-align: center;">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h2>
+                    </div>
+                </div>
+                <br><br><br><br>
+                
+                <div style="text-align: center">
+                    <div class="row"><br>
+                        <a href="onlineb.html">
+                            <img alt="online banking" src="rupee.png" style="border-radius: 50%" class="aligncenter" /></a>
+                        <p>
+                        </p>
+                            <a href="onlineb.html" id="abc">
+                            <h2 style="text-align: center;">
+                                Online Banking</h2>
+                        </a>
+                        <p style="text-align: center;">
+                            Online banking, also known as internet banking, e-banking or virtual banking, is<br>
+                            an electronic payment system that enables customers to conduct a range of financial<br>
+                            transactions through website</p><br>
+                    </div>
+                </div>
+                
+                <br><br><br><br>
+                <div style="text-align: center">
+                    <div class="row"><br>
+                        <a href="netbank.html">
+                            <img alt="smartpay" style="border-radius: 50%" src="smartpay.jpg" /></a>
+                        <p>
+                        </p>
+                        <a href="netbank.html" id="abc">
+                            <h2>
+                                Sm@rt P@y</h2>
+                        </a>
+                        <p>
+                            You can now pay your Electricity, Telephone, Mobile & DTH recharge, Insurance premium,<br>
+                            donations, magazine subscriptions, etc online without any registration or visiting<br>
+                            merchant website</p><br>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div style="text-align: center">
+                    <div class="row"><br>
+                        <a href="netbank.html">
+                            <img alt="online payment" style="border-radius: 50%" src="pay online.png" class="aligncenter"></a>
+                        <p>
+                        </p>
+                        <a href="netbank.html" id="abc">
+                            <h2 style="text-align: center;">
+                                Online Payment</h2>
+                        </a>
+                        <p style="text-align: center;">
+                            Pay your TRV-13 Bank RV Card Bills Online. E tax payments and pay<br>
+                            utility Bills through VISA Bill pay</p><br>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    <br><br><br><br>
+    <hr color="indianred">
+    
+	<div id="team">
+				<div>
+         			<div>
+                        <h1 style="text-align: center ;font-family:Wide Latin; color:orange;">
+                            OUR TEAM</h1><br>
+                            <h2 style="text-align: center;">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h2><h1 style="text-align: center;color:red;">&nabla;</h1><h2 style="text-align: center;">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h2>
+                    </div>
+                </div>
+				<div class="staff" style="float: left;">
+				<img src="i/CEO.jpg" class="image">
+					<div class="overlay">
+    				<div class="text">JANAKI KUHOTIA<br><hr><br>CEO</div>
+					</div>
+				</div>
+				<div class="staff" style="float: left;">
+				
+				<img src="i/CE.jpg" class="image">
+					<div class="overlay">
+						<div class="text">MANSI POKHCHANWALA<br><hr><br>DEPUTY COMMISSIONER</div>
+					</div></div>
+				<div class="staff" style="float: left;">
+				<img src="i/DC.JPG" class="image">
+					<div class="overlay">
+						<div class="text">RAJAN GADA<br><hr><br>COMMISSIONER</div>
+					</div></div>
+				
+				<div class="staff" style="float: left;">
+				<img src="i/HR.jpg" class="image">
+					<div class="overlay">
+						<div class="text">VIKASH MALIK<br><hr><br>HR</div>
+					</div></div>
+				
+				<div class="staff" style="float: left;">
+				<img src="i/council.jpg" class="image">
+					<div class="overlay">
+						<div class="text">RAMAN BHAKARWADI<br><hr><br>COUNCELLOR</div>
+					</div></div>
+				
+				<div class="staff" style="float:left">
+				<img src="i/MD.jpg" class="image">
+					<div class="overlay">
+						<div class="text">SHREYA ENAMURE<br><hr><br>MANAGING DIRECTOR</div>
+					</div>
+				</div>
+		</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	
+	<hr color="indianred">
+	
+	
+	<div id="pmy">
+	<div>
+         			<div>
+                        <h1 style="text-align: center ;font-family:Wide Latin; color:orange;">
+                            PRADHAN MANTRI YOJNA</h1><br>
+                            <h2 style="text-align: center;">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h2><h1 style="text-align: center;color:red;">&nabla;</h1><h2 style="text-align: center;">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h2>
+                    </div>
+                </div>
+		<div>
+		<h1><a href="pmy.html" id="t2">Go To The Page...</a></h1>
+		</div>
+	</div>
+	</center>
+	<br><br><br><br><br><br><br><br><br><br><br>
+    <div class="banner">
+    <a href="feedback.html" class="last"><font color="white" style="margin:20px">feedback</font></a>&nbsp;&nbsp;<p style="color: white;font-size: 28px;display: inline;">|</p>&nbsp;  
+    <a href="faq.html" class="last"><font color="white" style="margin:20px">FAQ</font></a>&nbsp;&nbsp;<p style="color: white;font-size: 28px;display: inline;">|</p>&nbsp;  
+    <a href="branch.html" class="last"><font color="white" style="margin:20px">nearest Branches</font></a>&nbsp;&nbsp;<p style="color: white;font-size: 28px;display: inline;">|</p>&nbsp;  
+    <a href="help.html" class="last"><font color="white" style="margin:20px">Help Desk</font></a>
+	 <img alt="sory" src="LIC_LOGO.png" align="right">
+    <img alt="sory" src="icon.png" align="right" style="margin-right: 20px;">
+    </div>
+	<DIV><h3 style="font-family: Arial Rounded MT;">&copy;TRV-13 BANK PVT. LTD..All sitemap right reserved</h3></DIV>
+	<div id="side">
+    <a href="#" id="fb"><img src="i/facebook.png" hspace="10" align="middle">facebook</a>
+    <a href="http://www.twitter.com" id="tw"><img src="i/twitter.jpg" hspace="10" align="middle">twitter</a>
+    <a href="http://www.linkedin.com" id="li"><img src="i/linkedin.png" hspace="10" align="middle">LinkedIn</a>
+    <a href="http://www.youtube.com" id="yt"><img src="i/youtube.png" hspace="10" align="middle">YouTube</a>
+    </div>
+
+	<div id="sidevdo">
+		<video src="i/bankapp%20vdo.mp4" style="width: 400px;height:225px; " controls></video>
+	</div>
+
+
+
+</body>
+</html>

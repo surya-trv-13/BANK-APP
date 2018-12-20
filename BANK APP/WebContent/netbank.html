@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function open1()
+	{
+		document.getElementById("sideopn").style.width="450px";
+		document.getElementById("full").style.marginLeft="450px";
+		document.body.style.backgroundColor="rgba(0,0,0,0.2)";
+	}
+function close1()
+	{
+	document.getElementById("sideopn").style.width="0px";
+	document.getElementById("full").style.marginLeft="0px";
+	document.body.style.backgroundColor="white"	;
+	}
+</script>
+<meta charset="ISO-8859-1">
+<style>
+	#sideopn{
+		height: 100%;
+		left:0px;
+		top:0%;
+		overflow-x: hidden;
+		position: fixed;
+		padding-top: 20px;
+		width: 0px;
+		transition: 0.5s;
+		background-color:darksalmon;
+		border-right: 4px ridge blue;
+	}
+	#sideopn a{
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    display: block;
+    transition: 0.3s;
+	}
+	#sideopn a:hover{
+		color: white;
+	}
+	#sideopn .clsbtn{
+	position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 56px;
+    font-weight: bolder;
+	}
+	#sideopn .clsbtn:hover{
+		color: red;
+	}
+	#picchange{
+		 width: 400px;
+    	height: 260px;
+    background-image: url(i/banner-2.jpg);
+	border: 5px solid brown;
+    animation-name: pic;
+    animation-duration: 12s;
+	animation-iteration-count: infinite;
+	float:left;
+	margin-left: 10px;
+	}
+	@keyframes pic{
+		0%{background-image: url(i/banner-2.jpg);}
+		25%{background-image: url(i/banner1.jpg);}
+		50%{background-image: url(i/mobile-banking.jpg);}
+		75%{background-image: url(i/onlinbank1.jpg);}
+	}
+	*{box-sizing: border-box;}
+	#temp{
+		width:800px;
+		height: 400px;
+		margin:0px 100px 100px 100px;
+		border: 2px solid brown;
+		border-right: 2px solid brown;
+		background-color: floralwhite;
+		border-radius: 7px;
+	}
+	#leftbox{
+		background-color: skyblue;
+		width:180px;
+		height:300px;
+		border:5px solid brown;
+		border-radius: 18px;
+		text-align: center;
+		margin-left: 7px;
+		margin-top: 0px;
+		float: left;
+	}
+	#rightbox{
+	
+		width:190px;
+		height:300px;
+		border:5px solid brown;
+		float: right;
+		margin-top: 0px;
+		margin-right: 7px;
+		border-radius: 5px;
+		background-color: blanchedalmond;
+	}
+	#full{
+		transition: margin-left 0.5s;
+	}
+	#optn{
+		font-size: 60px;
+		cursor: pointer;
+		color: azure;
+		background-color:black;
+		border-radius: 5px;
+		width: 45px;
+		display: inline;
+		top: 0px;
+	}
+	#login{
+		width: 150px;
+		height: 70px;
+		background-color: gold;
+		color:blak;
+		font-family: Arial Rounded MT;
+		border: 2px solid red;
+		border-radius:40px;
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 50px;
+		transition: 0.5s;
+	}
+	#login:hover{
+		background-color:goldenrod;
+		color:beige;
+		font-weight: bolder;
+		transition: 0.5s;
+	}
+	#head{
+		color:firebrick;
+		font-family: Harlow Solid;
+		font-size:40px;
+		background-color: aqua;
+		display: inherit;
+		margin-top: 0px;
+		border-radius: 7px 7px 0px 0px;
+	}
+	#subh{
+		color: snow;
+		font-family: Impact;
+	}
+.formheading1{  
+    background-color:BLUE;  
+    color:pink;  
+    padding:0px;  
+    text-align:center;  
+} 
+.formheading2{  
+    background-color:BLUE;  
+    color:white;  
+    padding:0px;  
+    text-align:center; 
+}   
+.banner
+{
+margin:0px;
+padding:0;
+height:35%;
+overflow:hidden;
+border:solid;
+background-color:Blue;
+}  
+</style>
+<title>Net Banking</title>
+</head>
+<body background="i/netback.jpg">
+<div id="sideopn">
+	<a href="#" class="clsbtn" onclick="close1()">&times;</a>
+	<img src="i/banklogo.jpg" width="140px" height="120px" style="padding-left: 20px;"/>
+	<br><br><br>
+	<a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="savtnc.html">Online Saving Accout Opening</a>
+	<a href="#">Help</a>
+	<a href="faq.html">F A Q</a>
+	</div>
+<div id="full">
+<div class="banner">
+<img src="i/banklogo.jpg" align="left">
+<h1 class="formheading1">TRV-13 BANK PVT. LTD.</h1>
+<h5 class="formheading2">we promise your happiness...</h5>
+</div>
+<span id="optn" onclick="open1()">&nbsp;&#9776;&nbsp;</span>
+<center>
+<div id="temp">
+	<h1 id="head">Internet Banking</h1>
+	<div id="leftbox">
+	<h2 id="subh">PERSONAL<br>BANKING</h2>
+		<br>
+	<a href="Login.jsp"><button type="button" id="login">LOGIN</button></a>
+	</div>
+	<div id="rightbox">
+		<h4 style="background-color: blanchedalmond;display: inherit;border-radius: 5px 5px 0px 0px;font-family: Arial Rounded MT">--NEWS--</h4>
+		<marquee direction="up" height="200px" style="text-align: center;">
+		--WELCOME--<br>to our services<br>of<br>NET BANKING<br>
+		This project<br>is built<br>under the<br>guidance of<br>Sams Sir<br>Rashmi Sir<br>and teams<br>
+		this is<br>the main page <br>of the<br>project.<br>---------<br>
+		</marquee>
+	</div>
+	<br>
+	<div id="picchange">
+	</div>
+	</div>
+	</center>
+	</div>
+	
+</body>
+</html>
